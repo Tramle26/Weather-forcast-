@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("image/myphoto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:"Gill Sans", "Gill Sans MT", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100vh;
+}
+main {
+    background-color: rgba(205, 226, 251, 0.85);
+    position: relative;
+    top: 30%;
+    border: 1px solid;
+    border-radius: 5px;
+    min-width: 540px;
+    max-width: 50%;
+    margin: auto;
+    padding: 2em;
+}
+h1 {
+    margin-bottom: 20px;
+    font-size: 3rem;       
+    font-weight: bold;     
+    color: rgb(43, 56, 78);   
+    text-align: center;    
+}
+.search-bar {
+  text-align: center;
+  margin-top: 30px;
+}
+.search-bar input {
+  width: 250px;                
+  padding: 10px;                
+  font-size: 3rem;             
+  border: 2px solid #ccc;       
+  border-radius: 6px;           
+  outline: none;                
+  transition: 0.3s;
+}
+
+#search {
+    border-radius: 5px 0 0 5px;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    width: 70%;
+    height: 42px;
+    background-color: aliceblue;
+}
+
+#submit {
+    border-radius: 0 5px 5px 0;
+    padding: 10px;
+    font-size: 20px;
+    width: 5em;
+    cursor: pointer;
+}
+
+#weather-wrapper {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: space-between;
+}
+
+#weather-search {
+    display: flex;
+    width: 50%
+}
