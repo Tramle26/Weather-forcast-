@@ -52,6 +52,15 @@ function fetchWeather() {
     <p><strong>Description:</strong> ${data.weather[0].description}</p>
     </div>
     `
+    weatherDataSection.style.display = "flex";
+    weatherDataSection.innerHTML = `
+    <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}.png" alt="${data.weather[0].description}" width="100" />
+    <div>
+        <h2>${data.name}</h2>
+        <p><strong>Temperature:</strong> ${Math.round(data.main.temp - 273.15)}°C</p>
+        <p><strong>Description:</strong> ${data.weather[0].description}</p>
+    </div>
+    `
     }
     async function fetchWeather() {
         document.getElementById("search").value = "";
